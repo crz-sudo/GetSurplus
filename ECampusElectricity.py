@@ -1,6 +1,5 @@
-#爬虫类
 import requests
-class ECampusElectricity:
+class ECampusElectricity:    #爬虫类
     def __init__(self, config=None):
         if config and isinstance(config, dict) and config:
             self.config = config
