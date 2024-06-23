@@ -15,7 +15,7 @@ class QQemailSend:
         # 纯文本内容
         msg = MIMEText(f'你的电费余额为 {self.surplus}', 'plain', 'utf-8')
         # From 的内容是有要求的，前面的abc为自己定义的 nickname，如果是ASCII格式，则可以直接写
-        msg['From'] = f'crz <313057554@qq.com>'
+        msg['From'] = f'nickname <emailaddress@qq.com>'
         msg['To'] = receiver
         msg['Subject'] = 'main test'         # 点开详情后的标题
         try:
