@@ -15,9 +15,9 @@ class QQemailSend:
         # 纯文本内容
         msg = MIMEText(f'你的电费余额为 {self.surplus},请及时充值', 'plain', 'utf-8')
         # From 的内容是有要求的，前面的abc为自己定义的 nickname，如果是ASCII格式，则可以直接写
-        msg['From'] = f'nickname <emailaddress@qq.com>'
+        msg['From'] = f'nickname <emailaddress@qq.com>' #emailaddress为发送邮箱
         msg['To'] = receiver
-        msg['Subject'] = '电费余额'         # 点开详情后的标题
+        msg['Subject'] = '电费余额低'         # 点开详情后的标题
         try:
             # 建立 SMTP 、SSL 的连接，连接发送方的邮箱服务器
             smtp = smtplib.SMTP_SSL('smtp.qq.com', 465)

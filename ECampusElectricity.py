@@ -1,3 +1,4 @@
+#改编自    https://github.com/FoskyTech/E-Campus-Electricity
 import requests
 class ECampusElectricity:    #爬虫类
     def __init__(self, config=None):
@@ -87,7 +88,7 @@ class ECampusElectricity:    #爬虫类
         params['platform'] = ''
         response = requests.post(url, headers=headers, data=params)
         return response.json()
-    def get_room_and_surplus(self):
+    def get_room_and_surplus(self):  #需自己设置校区等具体信息
         area_info = self.query_area()
         area_id = area_info['data'][1]['id']
         building_list = self.query_building(area_id)
