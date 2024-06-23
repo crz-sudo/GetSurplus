@@ -6,7 +6,7 @@ config = {
 }
 email = '313057554@qq.com'
 passwd = 'mrpusfmtwyiybhjc'
-receiver = '2644618056@qq.com'
+receiver = '313057554@qq.com'
 ece = ECampusElectricity(config)
 name,surplus = ece.get_room_and_surplus()
 print(f'房间：{name} 当前余额：{surplus}')
