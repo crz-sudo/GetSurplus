@@ -17,5 +17,5 @@ def main():
         email_sender.send_QQ_email_plain()
 if __name__ == '__main__':
     main()
-    time.sleep(15*24*60*60)
+    time.sleep(15*24*60*60) #十五天检测一次
 
